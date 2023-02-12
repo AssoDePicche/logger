@@ -12,16 +12,24 @@ Call the static method *"log"* of the [Logger](src/logger/Logger.php) class and 
 use Logger\Logger;
 
 /**
- * the first parameter is the log message
- * the second parameter is the log level
+ * @param string $message
+ * @param string $level
  */
 
 Logger::log("Hello, I\'m a debug message", Logger::DEBUG);
 
+/**
+ * In log/application.log file
+ * 
+ * [DEBUG] 2023-02-12 2:10 AM Hello, I'm a debug message
+ */
+
 ```
 
-***In log/application.log***
+## How to Install
 
-```txt
-[DEBUG] 2023-02-12 2:10 AM Hello, I'm a debug message
+You can clone the repository on your desktop or simply download the compressed file by clicking on Code and then Download ZIP.
+
+```bash
+git clone git@github.com:AssoDePicche/logger.git
 ```
